@@ -1,0 +1,19 @@
+name: HTML Validation
+
+on:
+  push:
+    branches:
+      - main   # La acción se ejecutará al hacer push en la rama "main"
+
+jobs:
+  html-validator:
+    runs-on: ubuntu-latest  # Usamos una máquina virtual de Ubuntu para ejecutar el trabajo
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2  # Esta acción verifica el código del repositorio
+
+      - name: Validate HTML
+        uses: w3c/html-validator-action@v2
+        with:
+          files: '**/*.html'   # Validamos todos los archivos .html en el repositorio
