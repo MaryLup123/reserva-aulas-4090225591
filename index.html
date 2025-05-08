@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -6,11 +7,15 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Contenido -->
+    <!-- Header -->
     <header>
-        <h1>Sistema de Reservas de Aulas</h1>
+        <div class="container">
+            <h1>Sistema de Reservas de Aulas</h1>
+            <p>Consulta la disponibilidad y realiza reservas de aulas de forma fácil y rápida.</p>
+        </div>
     </header>
 
+    <!-- Navigation -->
     <nav>
         <ul>
             <li><a href="#home">Inicio</a></li>
@@ -19,9 +24,44 @@
         </ul>
     </nav>
 
-    <!-- Otros contenidos -->
-    <footer>
-        <p>Contacto: <a href="mailto:contacto@tusitio.com">contacto@tusitio.com</a></p>
-    </footer>
+    <!-- Main Content -->
+    <main>
+        <section id="home">
+            <div class="container">
+                <h2>Bienvenido al Sistema de Reservas de Aulas</h2>
+                <p>Este sistema permite a los alumnos consultar la disponibilidad de aulas y realizar reservas de manera eficiente.</p>
+            </div>
+        </section>
+
+        <!-- Diagramas -->
+        <section id="diagramas">
+            <div class="container">
+                <h2>Diagramas del Sistema</h2>
+                <div class="diagramas">
+                    <div class="diagrama-item">
+                        <h3>Diagrama de Casos de Uso</h3>
+                        <img src="img/diagramas/diagrama-caso-uso.png" alt="Diagrama de Casos de Uso">
+                    </div>
+                    <div class="diagrama-item">
+                        <h3>Diagrama de Actividades</h3>
+                        <img src="img/diagramas/diagrama-actividad.png" alt="Diagrama de Actividades">
+                    </div>
+                    <div class="diagrama-item">
+                        <h3>Diagrama Entidad-Relación</h3>
+                        <img src="img/diagramas/diagrama-er.png" alt="Diagrama ERD">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="contacto">
+            <div class="container">
+                <p>Contacto: <a href="mailto:contacto@tusitio.com">contacto@tusitio.com</a></p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
