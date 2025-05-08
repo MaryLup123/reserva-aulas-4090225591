@@ -3,19 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Reserva de Aulas</title>
+    <title>Sistema de Reservas de Aulas</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Sistema de Reserva de Aulas</h1>
-        <p>Bienvenido al sistema de reservas de aulas. Puedes consultar disponibilidad y realizar reservas de aulas para tus proyectos y reuniones.</p>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Sistema de Reservas de Aulas</h1>
+            <p>Consulta la disponibilidad y realiza reservas de aulas de forma fácil y rápida.</p>
+        </div>
+    </header>
 
-        <h2>Diagramas</h2>
-        <img src="img/diagramas/diagrama-caso-uso.png" alt="Diagrama de Casos de Uso">
-        <img src="img/diagramas/diagrama-actividad.png" alt="Diagrama de Actividades">
-        <img src="img/diagramas/diagrama-er.png" alt="Diagrama ERD">
-    </div>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#diagramas">Diagramas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section id="home">
+            <div class="container">
+                <h2>Bienvenido al Sistema de Reservas de Aulas</h2>
+                <p>Este sistema permite a los alumnos consultar la disponibilidad de aulas y realizar reservas de manera eficiente.</p>
+            </div>
+        </section>
+
+        <!-- Diagramas -->
+        <section id="diagramas">
+            <div class="container">
+                <h2>Diagramas del Sistema</h2>
+                <div class="diagramas">
+                    <div class="diagrama-item">
+                        <h3>Diagrama de Casos de Uso</h3>
+                        <img src="img/diagramas/diagrama-caso-uso.png" alt="Diagrama de Casos de Uso">
+                    </div>
+                    <div class="diagrama-item">
+                        <h3>Diagrama de Actividades</h3>
+                        <img src="img/diagramas/diagrama-actividad.png" alt="Diagrama de Actividades">
+                    </div>
+                    <div class="diagrama-item">
+                        <h3>Diagrama Entidad-Relación</h3>
+                        <img src="img/diagramas/diagrama-er.png" alt="Diagrama ERD">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="contacto">
+            <div class="container">
+                <p>Contacto: <a href="mailto:contacto@tusitio.com">contacto@tusitio.com</a></p>
+            </div>
+        </footer>
+    </main>
 
     <script src="js/script.js"></script>
 </body>
