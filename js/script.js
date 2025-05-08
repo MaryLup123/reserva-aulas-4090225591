@@ -1,16 +1,26 @@
-document.addEventListener('DOMContentLoaded', function() {
-    console.log("Página cargada y lista.");
-    
-    // Puedes agregar interacciones dinámicas aquí.
-    // Ejemplo: Resaltar un enlace cuando se pasa el ratón por encima:
-    const navLinks = document.querySelectorAll('nav ul li a');
-    
-    navLinks.forEach(link => {
-        link.addEventListener('mouseover', function() {
-            link.style.color = "#f4a261"; // Cambia el color al pasar el ratón
-        });
-        link.addEventListener('mouseout', function() {
-            link.style.color = "#fff"; // Vuelve al color original
-        });
-    });
+document.getElementById('formReserva').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Obtener los valores del formulario
+    const nombre = document.getElementById('nombre').value;
+    const fecha = document.getElementById('fecha').value;
+    const horaInicio = document.getElementById('horaInicio').value;
+    const horaFin = document.getElementById('horaFin').value;
+    const aula = document.getElementById('aula').value;
+    const motivo = document.getElementById('motivo').value;
+
+    // Validación simple
+    if (!nombre || !fecha || !horaInicio || !horaFin || !aula || !motivo) {
+        alert("Por favor, llena todos los campos.");
+        return;
+    }
+
+    // Validación de la hora (hora de fin debe ser posterior a hora de inicio)
+    if (horaFin <= horaInicio) {
+        alert("La hora de fin debe ser posterior a la hora de inicio.");
+        return;
+    }
+
+    // Si todo es válido, mostrar un mensaje de éxito
+    alert("Reserva realizada con éxito.");
 });

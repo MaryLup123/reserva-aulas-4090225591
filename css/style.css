@@ -14,7 +14,7 @@ body {
 
 /* Encabezado */
 header {
-    background-color: #3498db;
+    background-color: #3498db;  /* Azul vibrante */
     color: #fff;
     padding: 50px 0;
     text-align: center;
@@ -64,7 +64,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #f39c12;
+    background-color: #f39c12;  /* Color vibrante al pasar el mouse */
     color: #fff;
     transform: scale(1.1);
 }
@@ -131,6 +131,42 @@ section p {
     opacity: 0.8;
 }
 
+/* Estilo del formulario de reservas */
+#reservas {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#formReserva {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#formReserva input, #formReserva select, #formReserva textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#formReserva button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#formReserva button:hover {
+    background-color: #2980b9;
+}
+
 /* Footer */
 footer {
     background-color: #2c3e50;
@@ -150,4 +186,3 @@ footer a:hover {
     text-decoration: underline;
     transform: scale(1.1);
 }
-      

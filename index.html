@@ -20,6 +20,7 @@
         <ul>
             <li><a href="#home">Inicio</a></li>
             <li><a href="#diagramas">Diagramas</a></li>
+            <li><a href="#reservas">Reservas</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
@@ -33,24 +34,56 @@
             </div>
         </section>
 
-        <!-- Diagramas -->
+        <!-- Diagrams Section -->
         <section id="diagramas">
             <div class="container">
                 <h2>Diagramas del Sistema</h2>
                 <div class="diagramas">
                     <div class="diagrama-item">
                         <h3>Diagrama de Casos de Uso</h3>
-                        <img src="img/diagramas/diagrama-caso-uso.png" alt="Diagrama de Casos de Uso">
+                        <img src="img/Diagrams/diagrama-caso-uso.png" alt="Diagrama de Casos de Uso">
                     </div>
                     <div class="diagrama-item">
                         <h3>Diagrama de Actividades</h3>
-                        <img src="img/diagramas/diagrama-actividad.png" alt="Diagrama de Actividades">
+                        <img src="img/Diagrams/diagrama-actividad.png" alt="Diagrama de Actividades">
                     </div>
                     <div class="diagrama-item">
                         <h3>Diagrama Entidad-Relación</h3>
-                        <img src="img/diagramas/diagrama-er.png" alt="Diagrama ERD">
+                        <img src="img/Diagrams/diagrama-er.png" alt="Diagrama ERD">
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Reserva Section -->
+        <section id="reservas">
+            <div class="container">
+                <h2>Realiza tu Reserva</h2>
+                <form id="formReserva">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha" name="fecha" required>
+
+                    <label for="horaInicio">Hora de Inicio</label>
+                    <input type="time" id="horaInicio" name="horaInicio" required>
+
+                    <label for="horaFin">Hora de Fin</label>
+                    <input type="time" id="horaFin" name="horaFin" required>
+
+                    <label for="aula">Aula</label>
+                    <select id="aula" name="aula" required>
+                        <option value="Aula 101">Aula 101</option>
+                        <option value="Aula 102">Aula 102</option>
+                        <option value="Aula 103">Aula 103</option>
+                    </select>
+
+                    <label for="motivo">Motivo de la Reserva</label>
+                    <textarea id="motivo" name="motivo" required></textarea>
+
+                    <button type="submit">Realizar Reserva</button>
+                </form>
             </div>
         </section>
 
@@ -58,6 +91,12 @@
         <footer id="contacto">
             <div class="container">
                 <p>Contacto: <a href="mailto:contacto@tusitio.com">contacto@tusitio.com</a></p>
+                <p>Síguenos en nuestras redes sociales:</p>
+                <p>
+                    <a href="#" target="_blank">Facebook</a> |
+                    <a href="#" target="_blank">Twitter</a> |
+                    <a href="#" target="_blank">Instagram</a>
+                </p>
             </div>
         </footer>
     </main>
