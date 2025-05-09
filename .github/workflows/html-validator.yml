@@ -1,29 +1,25 @@
-name: HTML Validation
+name: Validar HTML con HTMLHint
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
   pull_request:
-    branches:
-      - main
+    branches: [ main ]
 
 jobs:
-  html-validator:
+  htmlhint:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
-      - name: Validate HTML
-        uses: w3c/html-validator-action@v2.0.6  # Usar una versión estable
+      - name: Instalar Node.js
+        uses: actions/setup-node@v4
         with:
-          files: index.html
-          format: text  # Puedes cambiar a 'json' si prefieres un formato JSON
+          node-version: '20'
 
-      - name: Upload validation result as artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: html-validation-result
-          path: html-validation.txt
+      - name: Instalar HTMLHint
+        run: npm install -g htmlhint
+
+      - name: Ejecutar HTMLHint
+        run: htmlhint "**/*.html"
           
