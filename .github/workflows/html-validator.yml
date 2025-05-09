@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Validate HTML
-        uses: w3c/html-validator-action@v2.0.3  # Usar una versión estable
+        uses: w3c/html-validator-action@v2.0.6  # Usar una versión estable
         with:
           files: index.html
           format: text  # Puedes cambiar a 'json' si prefieres un formato JSON
